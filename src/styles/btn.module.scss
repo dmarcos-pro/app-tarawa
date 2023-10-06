@@ -1,0 +1,27 @@
+.btn_primary, .btn_secondary {
+    padding: 18px 32px;
+    display: inline-block;
+    border-radius: 4px;
+    font-family: var(--font-btn);
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.btn_primary {
+    border: 1px solid transparentvar(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    
+    &:hover {
+        background: linear-gradient(180deg, var(--lighten-primary-color), var(--primary-color));
+    }
+}
+.btn_secondary {
+    border: 1px solid var(--grey-color);
+    background-color: var(--secondary-color);
+    
+    &:hover {
+        background: linear-gradient(180deg, var(--white-color), var(--secondary-color));
+    }
+}
